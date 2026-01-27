@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.annotation.TypeAlias;
 import org.springframework.data.domain.Range;
 import org.springframework.data.elasticsearch.annotations.Document;
@@ -24,6 +25,15 @@ public class Customer {
     @Field(name = "customerName")
     String name;
 
-    @Field(type = FieldType.Integer_Range)
-    Range<Integer> ageRange; //gte,lte
+    String lastName;
+
+    @Transient // do not hash in DB
+    String fullName;
+
+    Long age;
+
+    Boolean isActive;
+
+//    @Field(type = FieldType.Integer_Range)
+//    Range<Integer> ageRange; //gte,lte
 }
