@@ -1,1 +1,11 @@
-spring.application.name=ElasticSearchLecture
+server:
+  port: 9090
+
+##if getting elasticsearch service from cloud do not use username and password use ApiKey
+##also able to create your apikey though
+spring:
+  elasticsearch:
+    uris: http://localhost:9200 #if its multinode, other way take http
+    username:
+    password:
+
