@@ -1,7 +1,7 @@
 package com.example.ElasticSearchLecture.repositories;
 
 
-import com.example.ElasticSearchLecture.entities.Customer;
+import com.example.ElasticSearchLecture.domain.Customer;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 

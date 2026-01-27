@@ -1,6 +1,6 @@
 package com.example.ElasticSearchLecture.contollers;
 
-import com.example.ElasticSearchLecture.entities.Customer;
+import com.example.ElasticSearchLecture.domain.Customer;
 import com.example.ElasticSearchLecture.repositories.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
